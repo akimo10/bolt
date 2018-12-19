@@ -1,29 +1,19 @@
 @charset "UTF-8";
 
-body {
-  font-family: 'Lato';
-}
+body {font-family: 'Lato';}
 
-h1 {
-  font-family: 'Raleway'
-}
+h1 {font-family: 'Raleway'}
 
-h2 {
-  font-family: 'Raleway'
-}
+h2 {font-family: 'Raleway'}
+
+a {text-decoration: none;}
+
+img {vertical-align: bottom;}
 
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
-}
-
-a {
-  text-decoration: none;
-}
-
-.wrapper {
-  width: 100%;
 }
 
 .inner {
@@ -35,6 +25,7 @@ a {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   background-color: #fff;
   z-index: 999;
 }
@@ -116,7 +107,7 @@ a {
   font-size: 20px;
   color: #fff;
   text-align: center;
-  line-height: 120%;
+  line-height: 24px;
 }
 
 .ols {
@@ -134,20 +125,21 @@ a {
 }
 
 .ols_content {
+  margin: 40px 0 90px 0;
 }
 
 .ols_content > a {
-  margin: 40px 0 40px 100px;
+  margin: 80px 0 0 100px;
   float: left;
   opacity: 0.7;
   transition: 0.3s all ease 0s;
   z-index:100;
 }
 
-.ols_content > a:nth-child(1) {
-  margin-left: 0px;
+.ols_content > a:nth-child(-n+3) {
+  margin-top: 0px;
 }
-.ols_content > a:nth-child(4) {
+.ols_content > a:nth-child(3n+1) {
   margin-left: 0px;
 }
 
@@ -158,7 +150,6 @@ a {
 .ols_btn_box {
   width: 80%;
   margin: 0 auto;
-  margin-top: 50px;
 }
 
 .ols_btn_box > p {
@@ -166,7 +157,7 @@ a {
   margin-right: 90px;
   width: 60%;
   text-align: center;
-  line-height: 200%;
+  line-height: 32px;
   word-break: keep-all;
 }
 
@@ -196,14 +187,14 @@ a {
 .skills_inner > h2 {
   font-size: 24px;
   color: #fff;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .skills_content {
   display: inline-block;
 }
 
-.skills_content > a {
+.skills_content_icon {
   float: left;
   margin-left: 180px;
   text-align: center;
@@ -211,11 +202,11 @@ a {
   font-size: 16px;
 }
 
-.skills_content > a:first-child {
+.skills_content_icon:first-child {
   margin-left: 0;
 }
 
-.skills_content > a > p {
+.skills_content_icon > p {
   margin-top: 15px;
 }
 
