@@ -309,7 +309,7 @@ img {vertical-align: bottom;}
     margin: 0;
   }
 
-  .ols_content > a:nth-child(4n+3) {
+  .ols_content > a:nth-child(3n) {
     margin-bottom: 80px;
   }
 
